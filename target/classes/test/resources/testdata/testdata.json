@@ -1,0 +1,54 @@
+{
+  "runoptions" : 
+    {
+      "browsertype" : "firefox",
+      "waittimeout" : 10,
+      "debugmode" : false,
+      "generalcapabilities" :
+        {
+          "acceptSslCerts" : true,
+          "unexpectedAlertBehaviour" : "dismiss",
+          "browserName" : "firefox",
+          "version" : "",
+          "platform" : "windows"
+        },
+      "firefoxcapabilities" :
+        {
+          "firefox_profile" : "testFirefoxProfile",
+          "firefox_binary" : "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"
+        },
+      "firefoxprofile" : 
+        {
+          "webdriver_accept_untrusted_certs" : true,
+          "webdriver_firefox_port" : 7055
+        },
+      "iecapabilities" :
+        {
+          "browserAttachTimeout" : 0,
+          "enableElementCacheCleanup" : true,
+          "ignoreProtectedModeSettings" : true
+        },
+      "chromeoptions" :
+        {
+          "args" : ["start-maximized", "user-data-dir=PROJECT_PATH\\src\\testdata\\chromeprofiles\\testchromeprofile"]
+        } 
+    },
+   
+   "testdata" :
+     {
+       "validlogindata" :
+       [
+        {"username" : "dentestshrtname@gmail.com", "password" : "abc123xy"},
+        {"username" : "dentestsuperlongnameexample", "password" : "abc123xy"},
+        {"username" : "dentestusernamewithnmbrs123", "password" : "abc123xy"}
+       ],
+      "wishlistdata" :
+       {"nintendo_wii" : ["Nintendo Wii includes Wii Sports", "https://www.amazon.ca/Nintendo-Wii-includes-Sports/dp/B0009VXBAQ/ref=sr_1_1?ie=UTF8&qid=1463946958&sr=8-1&keywords=nintendo+wii"],
+        "xbox_one" : ["Xbox One 500GB Console - Name Your Game Bundle - Bundle Edition", "https://www.amazon.ca/Xbox-One-500GB-Console-Bundle/dp/B019TYEXC8/ref=sr_1_1?ie=UTF8&qid=1463947117&sr=8-1&keywords=xbox+one"],
+        "shawshank_redemption_movie" : ["The Shawshank Redemption", "https://www.amazon.ca/Shawshank-Redemption-lombre-Bilingual-Widescreen/dp/B0024396WY/ref=sr_1_1?ie=UTF8&qid=1463947320&sr=8-1&keywords=shawshank+redemption"],
+        "lindt_chocolate" : ["Choice Lindt Chocolate Gift Basket", "https://www.amazon.ca/Choice-Lindt-Chocolate-Gift-Basket/dp/B00IKSL4MW/ref=sr_1_2?ie=UTF8&qid=1463947441&sr=8-2&keywords=lindt+chocolate"],
+        "omega_juicer" : ["Omega J8004 Nutrition Center Commercial Masticating Juicer (White)", "https://www.amazon.ca/Omega-J8004-Nutrition-Commercial-Masticating/dp/B001RLYOEE/ref=sr_1_3?ie=UTF8&qid=1463947500&sr=8-3&keywords=masticating+juicer"]
+       }
+      }  
+
+}
